@@ -1,42 +1,14 @@
-// let title = "Hello World";
+let title = "Hello World";
 
-// function Button() {
-//   return <button>{title}</button>;
-// }
-
-// export default function Home() {
-//   return (
-//     <div>
-//       <Button />
-//     </div>
-//   );
-// }
-
-// Tipado de props
-type ButtonProps = {
-  text: string;
-  subtitle?: string;
-  color?: string;
-};
-
-function Button({ text }: ButtonProps) {
-  return <button>{text}</button>;
+function Button() {
+  return <button>{title}</button>;
 }
 
-// const Button = (props: ButtonProps) => {
-//   return <button>{props.text}</button>;
-// }
-
-// const Button: React.FC<ButtonProps> = ({ text }) => {
-//   return <button>{text}</button>;
-// }
-
-function Page() {
+export default function Home() {
   return (
     <div>
-      <Button text="click me" />
+      <Button />
     </div>
   );
 }
 
-export default Page;

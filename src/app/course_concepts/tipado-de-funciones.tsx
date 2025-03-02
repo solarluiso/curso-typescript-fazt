@@ -1,11 +1,11 @@
 "use client";
 
 type ButtonProps = {
-  onClick: () => void;
+  onClick: (text: string) => void;
 };
 
 function Button({ onClick }: ButtonProps) {
-  return <button onClick={onClick}>Click me!</button>;
+  return <button onClick={() => onClick("Hello world!")}>Click me!</button>;
 }
 
 function Page() {
